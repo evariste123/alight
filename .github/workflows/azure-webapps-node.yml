@@ -1,0 +1,43 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: proppins,sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+nav a{
+  position:relative;
+  font-size: 1.1em;
+  font-weight: 500;
+  color:#333;
+  text-decoration: none;
+  padding: 6px 20px;
+  transition: .5s;
+}
+nav a:hover{
+  color:yellow;
+}
+nava span{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom:20px sold #0ef;
+  border-radius: 15px;
+  transition: scale(0) translateY(50px);
+  opacity: 0;
+  transition: .5s;
+}
+nav a:hover span{
+  transition: scale(1) transition(0);
+  opacity: 1s;
+}
